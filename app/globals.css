@@ -1,0 +1,41 @@
+:root{--bg:#0a1224;--surface:#101b33;--surface2:#142346;--line:#223357;--text:#f5f8ff;--muted:#a3b3d1;--blue:#2f6bff;--cyan:#22d3ee;--r:14px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font),system-ui,sans-serif;line-height:1.65;overflow-x:hidden}
+a{color:inherit}h1,h2,h3{line-height:1.15;margin:0}p{margin:0}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.section{padding:88px 0}.section>.wrap>h2{font-size:clamp(1.7rem,3vw,2.3rem);margin-bottom:12px}
+.lead{color:var(--muted);max-width:62ch;margin-bottom:36px}
+header.nav{position:sticky;top:0;z-index:10;background:rgba(10,18,36,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav nav{display:flex;gap:4px;flex-wrap:wrap}.nav nav a{padding:8px 12px;border-radius:8px;text-decoration:none;color:var(--muted);font-size:.95rem}
+.nav nav a:hover{color:var(--text);background:var(--surface)}.brand{font-weight:700;text-decoration:none}
+.hero{padding:104px 0 72px;background:radial-gradient(ellipse at 80% 0,rgba(47,107,255,.28),transparent 55%),radial-gradient(ellipse at 10% 100%,rgba(34,211,238,.12),transparent 50%)}
+.hero h1{font-size:clamp(2.6rem,7vw,4.8rem);letter-spacing:-.03em}
+.hero .role{color:var(--cyan);font-weight:600;margin:16px 0 20px}
+.hero .tag{font-size:1.2rem;color:var(--muted);max-width:44ch}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.btn{display:inline-flex;align-items:center;min-height:44px;padding:0 22px;border-radius:10px;font-weight:600;text-decoration:none;border:1px solid var(--line);background:var(--surface);cursor:pointer;color:var(--text);font:inherit;font-weight:600}
+.btn.primary{background:linear-gradient(135deg,var(--blue),#1fa4e8);border-color:transparent}.btn:hover{border-color:var(--cyan)}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.card h3{font-size:1.15rem;margin-bottom:10px}.card p{color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0;padding:0;list-style:none}
+.chips li{padding:4px 12px;border-radius:999px;background:var(--surface2);border:1px solid var(--line);font-size:.88rem}
+.project h3{font-size:1.3rem}.project h4{margin:18px 0 6px;font-size:.95rem;color:var(--cyan)}
+.project ul.feat{margin:0;padding-left:18px;color:var(--muted)}
+.badge{display:inline-block;margin-bottom:10px;padding:2px 10px;border-radius:6px;font-size:.82rem;font-weight:600;border:1px solid var(--cyan);color:var(--cyan)}
+.links{display:flex;gap:16px;margin-top:18px}.links a{color:var(--cyan)}
+.timeline{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--line)}
+.timeline li{position:relative;padding:0 0 28px 20px}.timeline li::before{content:"";position:absolute;left:-30px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--cyan)}
+.timeline h3{font-size:1.1rem}.timeline p{color:var(--muted);max-width:60ch}
+form{display:grid;gap:14px;max-width:560px}label{display:grid;gap:6px;font-weight:600;font-size:.95rem}
+input,textarea{font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px}
+textarea{min-height:140px;resize:vertical}.hp{position:absolute;left:-9999px}
+.msg{padding:12px 14px;border-radius:10px;border:1px solid var(--line)}.msg.ok{border-color:#27c28a}.msg.err{border-color:#ff6b6b}
+.contact-grid{display:grid;gap:40px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.contact-grid ul{list-style:none;padding:0;margin:0;display:grid;gap:10px}.contact-grid a{color:var(--cyan)}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}
+@media(max-width:640px){.section{padding:64px 0}.nav nav a{padding:8px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.timeline .period{color:var(--cyan);font-size:.9rem;font-weight:600}
